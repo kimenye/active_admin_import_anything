@@ -18,12 +18,10 @@ Or install it yourself as:
 
 ## Usage
 
-Add the following line into your active admin resource:
+Add the following block into your active admin resource:
 
 ```
 ActiveAdmin.register Product do
-
-   active_admin_import_anything
 
    active_admin_import_anything do |file|
       #write the code to handle the imported file

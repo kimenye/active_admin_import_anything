@@ -6,7 +6,7 @@ module ActiveAdminImportAnything
       end
 
       collection_action :upload_file do
-        render "admin/csv/upload_file"
+        render "admin/file/upload_file"
       end
 
       collection_action :upload_file, :method => :post do
