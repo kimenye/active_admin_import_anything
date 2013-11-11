@@ -20,23 +20,18 @@ Or install it yourself as:
 
 Add the following line into your active admin resource:
 
+```
+ActiveAdmin.register Product do
 
    active_admin_import_anything
 
-The Import button should now appear. Click it and upload your file. Press submit.
-
-## Custom Import Behavior
-
-Need to do something special with the import? active_admin_importable accepts an optional block that will be called on each row, replacing the default functionality ( calling create! on the associated model). The associated model and a hash of the current row will get passed into the block. For example:
-
-```
-ActiveAdmin.register Product do
    active_admin_import_anything do |file|
       #write the code to handle the imported file
    end
 end
 ```
 
+The Import button should now appear. Click it and upload your file. Press submit.
 
 ## Contributing
 
