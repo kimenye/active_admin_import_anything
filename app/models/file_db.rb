@@ -1,8 +1,8 @@
 class FileDb
   class << self
-    def do_import(target_model, file, &block)
+    def do_import(file, &block)
       if (block_given?)
-        block.call(target_model, file)
+        block.call(file)
       end
     end
   end
