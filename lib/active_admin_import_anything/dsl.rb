@@ -9,7 +9,7 @@ module ActiveAdminImportAnything
         render "admin/file/upload_file"
       end
 
-      collection_action :upload_file, :method => :post do
+      collection_action :import_file, :method => :post do
         FileDb.do_import(active_admin_config.resource_class, params[:dump][:file], &block)
         redirect_to :action => :index, :notice => "#{active_admin_config.resource_name.to_s} imported successfully!"
       end
