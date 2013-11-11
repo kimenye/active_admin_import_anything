@@ -23,7 +23,7 @@ Add the following block into your active admin resource:
 ```
 ActiveAdmin.register Product do
 
-   active_admin_import_anything do |model,file|
+   active_admin_import_anything do |file|
       #write the code to handle the imported file
    end
 end
