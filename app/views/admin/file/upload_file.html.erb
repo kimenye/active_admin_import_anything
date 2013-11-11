@@ -1,0 +1,22 @@
+<%= form_for :dump, :url => {:action => "import_file"}, :html => {:multipart => true} do |f| %>
+
+     <table>
+
+       <tr>
+         <td>
+           <%= label_tag  "dump_file", "Select a File" %>
+           </td>
+         <td>
+           <%= f.file_field :file %>
+         </td>
+       </tr>
+       <tr>
+         <td>
+           <%= submit_tag 'Submit' %>
+         </td>
+       </tr>
+
+     </table>
+
+
+<% end %>
